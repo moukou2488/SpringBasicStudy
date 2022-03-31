@@ -29,7 +29,7 @@ public class ApplicationContextExtendsFindTest {
     @DisplayName("자식이 둘 있으면 이름을 지정하면 된다.")
     void findBeanByParentTypeBeanName(){
         DiscountPolicy fixDiscountPolicy = ac.getBean("fixDiscountPolicy", DiscountPolicy.class);
-        assertThat(fixDiscountPolicy).isInstanceOf(RateDiscountPolicy.class);
+        assertThat(fixDiscountPolicy).isInstanceOf(FixDiscountPolicy.class);
     }
     
     @Test
